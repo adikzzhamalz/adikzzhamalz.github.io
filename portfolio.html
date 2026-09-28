@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Adik Hamal Rozaqi</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">AHR<span class="accent">.</span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="page-header-content">
+      <h1>My <span class="accent-text">Portfolio</span></h1>
+      <p>A collection of my work and projects</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Portfolio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER BUTTONS -->
+  <section class="portfolio-filter-section">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+        <button class="filter-btn" data-filter="network">Networking</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO GRID -->
+  <section class="portfolio-section">
+    <div class="container">
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- Card 1 -->
+        <div class="portfolio-card" data-category="web">
+          <div class="portfolio-img-wrapper">
+            <img
+              src="webbb.jpg"
+              alt="Fishing Static Website"
+              onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop'"
+            />
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <a href="https://strikespot.page.gd" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Work</a>
+              </div>
+            </div>
+            <div class="portfolio-category-tag">Web Design</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">Fishing Static Website</h3>
+            <p class="portfolio-desc">
+              A static website for a school project on the world of fishing. 
+              Created to help beginners understand the world of fishing—from techniques and equipment to the best spots.
+            </p>
+            <div class="portfolio-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://strikespot.page.gd" class="portfolio-link" target="_blank">
+              <i class="fas fa-arrow-right"></i> View Details
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="portfolio-card" data-category="web">
+          <div class="portfolio-img-wrapper">
+            <img
+              src="images.jpg"
+              alt="Web Statis History Project"
+              onerror="this.src='https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=400&fit=crop'"
+            />
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <a href="https://imperium-reformasi-t0gg.arcada.app" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Work</a>
+              </div>
+            </div>
+            <div class="portfolio-category-tag">Web Design</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">Web Statis History Project</h3>
+            <p class="portfolio-desc">
+              A static website for a history assignment on the theme of the Reformasi and the Evolution of Democracy in Indonesia. 
+              It presents historical content in an informative and engaging way using a modern web format.
+            </p>
+            <div class="portfolio-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://imperium-reformasi-t0gg.arcada.app" class="portfolio-link" target="_blank">
+              <i class="fas fa-arrow-right"></i> View Details
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="portfolio-card" data-category="network">
+          <div class="portfolio-img-wrapper">
+            <img
+              src="iot.jpeg"
+              alt="TRASHWISE IoT"
+              onerror="this.src='https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&h=400&fit=crop'"
+            />
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <a href="https://drive.google.com/file/d/1WjIBSLfca5Uzs8bafGDFbq_2pq9fEgI0/view?usp=drivesdk" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
+              </div>
+            </div>
+            <div class="portfolio-category-tag">IoT / Networking</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">TRASHWISE: Smart Automatic Waste Sorting Bin</h3>
+            <p class="portfolio-desc">
+              This IoT project is a smart trash can capable of automatically 
+              sorting trash using sensors and a microcontroller—a smart solution for modern waste management.
+            </p>
+            <div class="portfolio-tags">
+              <span>IoT</span>
+              <span>Mikrokontroler</span>
+              <span>Sensor</span>
+              <span>Networking</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1WjIBSLfca5Uzs8bafGDFbq_2pq9fEgI0/view?usp=drivesdk" class="portfolio-link" target="_blank">
+              <i class="fas fa-arrow-right"></i> View Details
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4 - Marketplace -->
+        <div class="portfolio-card" data-category="graphic">
+          <div class="portfolio-img-wrapper">
+            <img
+              src="img/porto-marketplace.jpg"
+              alt="Marketplace Adik Hamal"
+              onerror="this.src='https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=400&fit=crop'"
+            />
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <a href="https://s.id/adikhamal-" class="overlay-btn" target="_blank"><i class="fas fa-store"></i> Visit Store</a>
+              </div>
+            </div>
+            <div class="portfolio-category-tag">Marketplace</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">Marketplace Digital Products &amp; Souvenirs</h3>
+            <p class="portfolio-desc">
+              A personal online store that sells a variety of digital products and souvenirs. 
+              It is independently managed as a way to foster an entrepreneurial spirit from an early age.
+            </p>
+            <div class="portfolio-tags">
+              <span>E-Commerce</span>
+              <span>Produk Digital</span>
+              <span>Souvenir</span>
+            </div>
+            <a href="https://s.id/adikhamal-" class="portfolio-link" target="_blank">
+              <i class="fas fa-arrow-right"></i> Visit Store
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5 - Coming Soon -->
+        <div class="portfolio-card coming-soon-card" data-category="video">
+          <div class="portfolio-img-wrapper">
+            <div class="coming-soon-placeholder">
+              <div class="cs-icon"><i class="fas fa-clock"></i></div>
+              <span class="cs-label">Coming Soon</span>
+              <span class="cs-sub">In Progress</span>
+            </div>
+            <div class="portfolio-category-tag">Video</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">Organization Profile Video</h3>
+            <p class="portfolio-desc coming-soon-desc">
+              <i class="fas fa-hourglass-half"></i> This project is currently in progress. Stay tuned for the latest updates!
+            </p>
+            <div class="portfolio-tags">
+              <span>Video Editing</span>
+              <span>Motion Graphics</span>
+            </div>
+            <span class="portfolio-link coming-soon-link">
+              <i class="fas fa-lock"></i> Not Available Yet
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 5 - Coming Soon -->
+        <div class="portfolio-card coming-soon-card" data-category="network">
+          <div class="portfolio-img-wrapper">
+            <div class="coming-soon-placeholder">
+              <div class="cs-icon"><i class="fas fa-clock"></i></div>
+              <span class="cs-label">Coming Soon</span>
+              <span class="cs-sub">In Progress</span>
+            </div>
+            <div class="portfolio-category-tag">Networking</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">CISCO Network Simulation</h3>
+            <p class="portfolio-desc coming-soon-desc">
+              <i class="fas fa-hourglass-half"></i> This project is currently in progress. Stay tuned for the latest updates!
+            </p>
+            <div class="portfolio-tags">
+              <span>CISCO</span>
+              <span>Packet Tracer</span>
+              <span>Networking</span>
+            </div>
+            <span class="portfolio-link coming-soon-link">
+              <i class="fas fa-lock"></i> Not Available Yet
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 6 - Coming Soon -->
+        <div class="portfolio-card coming-soon-card" data-category="graphic">
+          <div class="portfolio-img-wrapper">
+            <div class="coming-soon-placeholder">
+              <div class="cs-icon"><i class="fas fa-clock"></i></div>
+              <span class="cs-label">Coming Soon</span>
+              <span class="cs-sub">In Progress</span>
+            </div>
+            <div class="portfolio-category-tag">Graphic Design</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">Statistical Data Infographic</h3>
+            <p class="portfolio-desc coming-soon-desc">
+              <i class="fas fa-hourglass-half"></i> This project is currently in progress. Stay tuned for the latest updates!
+            </p>
+            <div class="portfolio-tags">
+              <span>Canva</span>
+              <span>Infografis</span>
+              <span>Data Visualization</span>
+            </div>
+            <span class="portfolio-link coming-soon-link">
+              <i class="fas fa-lock"></i> Not Available Yet
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-logo">AHR<span class="accent">.</span></p>
+      <p class="footer-copy">&copy; 2025 Adik Hamal Rozaqi. All Rights Reserved.</p>
+      <p class="footer-love">Made with <i class="fas fa-heart" style="color:#f43f5e"></i> &amp; Passion</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

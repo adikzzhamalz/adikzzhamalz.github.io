@@ -1,0 +1,472 @@
+/* ============================================
+   CV PAGE STYLES - cv.css
+   ============================================ */
+
+.cv-section {
+  padding: 60px 0 100px;
+}
+
+/* ---- Actions ---- */
+.cv-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+}
+
+/* ============================================
+   CV DOCUMENT
+   ============================================ */
+.cv-document {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ---- CV Header ---- */
+.cv-header {
+  background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f0f1a 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 48px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-3), var(--accent-2));
+}
+
+.cv-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 80% 50%, rgba(108, 99, 255, 0.1) 0%, transparent 60%),
+    radial-gradient(circle at 20% 50%, rgba(6, 182, 212, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.cv-photo-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.cv-photo {
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+
+.cv-header-info {
+  position: relative;
+  z-index: 1;
+}
+
+.cv-name {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 6px;
+  background: linear-gradient(135deg, #fff, var(--accent-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cv-title {
+  font-size: 1rem;
+  color: var(--accent-light);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.cv-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cv-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.cv-contact-item i {
+  color: var(--accent);
+  width: 16px;
+  text-align: center;
+}
+
+/* ---- CV Body ---- */
+.cv-body {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 0;
+}
+
+.cv-left {
+  background: rgba(255, 255, 255, 0.02);
+  border-right: 1px solid var(--border-light);
+  padding: 40px 32px;
+}
+
+.cv-right {
+  padding: 40px 40px;
+}
+
+/* ---- CV Block ---- */
+.cv-block {
+  margin-bottom: 36px;
+}
+
+.cv-block-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.cv-block-title i {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.cv-block-title h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-primary);
+}
+
+/* ---- CV Table ---- */
+.cv-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cv-table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.cv-table td {
+  padding: 7px 4px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+
+.cv-td-label {
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+  padding-right: 8px;
+  min-width: 130px;
+}
+
+.cv-table td:nth-child(2) {
+  padding: 7px 8px;
+  color: var(--text-muted);
+}
+
+/* ---- CV Skills ---- */
+.cv-skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cv-skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cv-skill-name {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  min-width: 110px;
+  font-weight: 500;
+}
+
+.cv-skill-bar {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cv-skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  border-radius: 6px;
+  transition: width 1.2s ease;
+}
+
+.cv-skill-fill.soft {
+  background: linear-gradient(90deg, var(--accent-3), #8b5cf6);
+}
+
+.cv-skill-pct {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  min-width: 32px;
+  text-align: right;
+}
+
+/* ---- CV Hobbies ---- */
+.cv-hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cv-hobby-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(108, 99, 255, 0.1);
+  border: 1px solid var(--border);
+  color: var(--accent-light);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+/* ---- CV Timeline ---- */
+.cv-timeline {
+  position: relative;
+  padding-left: 24px;
+}
+
+.cv-timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-3), transparent);
+}
+
+.cv-timeline-item {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.cv-timeline-dot {
+  position: absolute;
+  left: -22px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  transition: var(--transition);
+}
+
+.cv-timeline-dot.active,
+.cv-timeline-item.active .cv-timeline-dot {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.cv-timeline-dot.gold {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
+}
+
+.cv-timeline-year {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+
+.cv-timeline-info h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: var(--text-primary);
+}
+
+.cv-timeline-info p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* ---- CV Quotes ---- */
+.cv-quotes {
+  background: linear-gradient(135deg, rgba(108, 99, 255, 0.08) 0%, rgba(6, 182, 212, 0.05) 100%);
+  border-top: 1px solid var(--border-light);
+  padding: 40px 48px;
+  text-align: center;
+}
+
+.cv-quote-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cv-quote-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  opacity: 0.3;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.cv-quote-text {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.cv-quote-author {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+  .navbar,
+  .page-header,
+  .cv-actions,
+  .footer {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .cv-document {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .cv-header {
+    background: #1a1a2e !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv-section {
+    padding: 0;
+  }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 900px) {
+  .cv-body {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-left {
+    border-right: none;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .cv-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 24px;
+  }
+
+  .cv-contacts {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .cv-header { padding: 24px 20px; }
+  .cv-left, .cv-right { padding: 24px 20px; }
+  .cv-quotes { padding: 32px 20px; }
+  .cv-name { font-size: 1.5rem; }
+}
+
+/* ============================================
+   CV SKILLS DESCRIPTION (pengganti bar %)
+   ============================================ */
+.cv-skills-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cv-skill-desc-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.cv-skill-desc-item:hover {
+  border-color: var(--border);
+  background: rgba(108, 99, 255, 0.05);
+}
+
+.cv-skill-desc-icon {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.cv-skill-desc-text h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.cv-skill-desc-text p {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
